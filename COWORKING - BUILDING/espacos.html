@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Espaços</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+
+        <a class="navbar-brand h1 mb-0" href="index.html">MyCoworking</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="espacos.html">Planos & Espaços</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--imagem-->
+    
+    <div class="title">
+      <div class="box">
+        <h1>Encontre seu espaço</h1>
+      </div>
+    </div>
+  <div class="search-bar"> 
+            <div class="row">
+              
+              <div class="col-md-8 col-10 text-center my-md-4 mb-4 mt-2 ml-4">
+                  <h3><i class="fas fa-envelope text-primary col-12 col-md-1" aria-hidden="true"></i></h3>
+            </div>
+                </form>
+            </div>
+            <div class="row justify-content-center mb-5 " >
+              <form class="form-inline" id="search-cow">
+            <input id="myInput" class="form-control mr-2" style="width: 400px;" name="search" placeholder="Search for names..." autocomplete="off" autofocus="autofocus" type="text" onkeyup="searchFunction()">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </form>
+                   
+                </div>
+              </div>
+        </div>  
+    </div>
+    <div class="container">
+      <div class="row ">
+
+               <div class="listas">
+                    <div class="card mb-5">
+                        <ul id="myUL" class="list-group">
+                            <li class="list-group-item">
+                                <img class="card-img top" src="img/coworking1.jpg">
+                                <div><a href="/reservarLugares.html" class="card-link"><h3 id="nomePlano">Plano Prata</h3><h6>Zona Sul</h6></a>
+                                  <h6 id="valor">R$ 800,00</h6>
+                                <button type="submit" class="btn btn-primary" onclick="openNav()"> CONTRATAR</button></div>
+                            </li>
+                            <li class="list-group-item">
+                                <img class="card-img top" src="img/coworking1.jpg">
+                                <div><a href="/reservarLugares.html" class="card-link"><h3 id="nomePlano">Plano Ouro</h3><h6>Zona Sul</h6></a>
+                                  <h6 id="valor">R$ 1.000,00</h6>
+                                <button type="submit" class="btn btn-primary" onclick="openNav()"> CONTRATAR</button></div> 
+                            </li>
+                            <li class="list-group-item">
+                                <img class="card-img top" src="img/coworking1.jpg">
+                                <div><a href="/reservarLugares.html" class="card-link"><h3 id="nomePlano">Plano Ouro</h3><h6>Zona Sul</h6></a>
+                                  <h6 id="valor">R$ 1.000,00</h6>
+                                <button type="submit" class="btn btn-primary" onclick="openNav()"> CONTRATAR</button></div>
+                            </li>
+
+                            <li class="list-group-item">
+                                <img class="card-img top" src="img/coworking1.jpg">
+                                <a href="/reservarLugares.html" class="card-link"><h3 id="nomePlano">Plano Prata</h3><h6>Zona Sul</h6></a>
+                                <h6 id="valor">R$ 800,00</h6>
+                                <button type="submit" class="btn btn-primary" onclick="openNav()"> CONTRATAR</button>
+                            </li>
+                            <li class="list-group-item">
+                                 <img class="card-img top" src="img/coworking1.jpg">
+                                 
+                                <a href="/reservarLugares.html" class="card-link"><h3 id="nomePlano">Plano Bronze</h3><h6>Centro</h6></a>
+                                <h6 id="valor">R$ 500,00</h6>
+                                <button type="submit" class="btn btn-primary" onclick="openNav()"> CONTRATAR</button>
+                            </li>
+                        </ul>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<!-- Slide - Checkout -->
+
+
+<div id="myNav" class="overlay">
+  <div class="overlay-content">
+
+    <h2>Checkout form</h2>
+    <form name="formulario" id="form" action="agradecer.html" >
+      <div class="row">
+          <div class="col-md-4 order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Cart</span>
+                <button onclick="closeNav()" class="btn btn-secondary">Fechar</button>
+              
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0" id="plano">Nome do Plano</h6>
+                  <small class="text-muted">Descrição</small>
+                </div>
+                <span class="text-muted">$</span>
+              </li>
+             
+              <li class="list-group-item d-flex justify-content-between bg-light">
+                <div class="text-success">
+                  <h6 class="my-0">Promo code</h6>
+                  <small>EXAMPLECODE</small>
+                </div>
+                <span class="text-success"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div id="total"><span>Total (R$)</span></div>
+                <strong>$</strong>
+              </li>
+            </ul>
+
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Promo code">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-secondary">Redeem</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-8 order-md-1">
+            
+              <hr class="mb-4">
+
+              <h4 class="mb-3">Payment</h4>
+
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="cc-name">Nome</label>
+                  <input type="text" class="form-control" id="cc-name" name="nome" placeholder="" required>
+                  <small class="text-muted">Nome completo que está no cartão</small>
+                  <div class="invalid-feedback">
+                    Name on card is required
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="cc-number">Credit card number</label>
+                  <input type="text" name="cartao" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Credit card number is required
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <label for="cc-expiration">Expiration</label>
+                  <input type="text" name="expirar" class="form-control" id="cc-expiration" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Expiration date required
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="cc-expiration">CVV</label>
+                  <input type="text" name="cvv" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div id="cvv" class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div>
+              </div>
+              <hr class="mb-4">
+              <button onclick="return validar()" id="check" class="btn btn-secondary btn-lg btn-block">Finalizar</button>
+              <p id="demo"></p>
+            </form>
+          </div>
+        </div>
+      </form>
+        <div id="loadScreen" style="display: none;" > <div id="Aguarde" src></div></div>
+        <div id="confirmado" class="my-5 pt-5 text-muted text-center text-small">
+          
+        </div>
+      </div>
+
+    </div>
+    <!--Footer-->
+
+    <div class="row">
+        <div class="col-sm-12 mb-3"><hr></div>
+        <div class="col-sm-4">
+            <h3 class="text-center">Idealizadores</h3>
+            <p class="text-center mt-md-5 mt-3">
+                Augusto Cezar
+            </p>
+            <p class="text-center">
+                Lucas Gaudio
+            </p>
+             <p class="text-center">
+                Rafael Lopes de Almeida
+            </p>
+        </div>
+
+        <div class="col-sm-4">
+                <h3 class="text-center">Menu</h3>
+                <div class="list-group text-center">
+                    <a chref="#" class="list-group-item list-group-item-action list-group-item-primary">
+                        Perfil
+                    </a>
+                    <a chref="#" class="list-group-item list-group-item-action list-group-item-primary">
+                        Serviços
+                    </a>
+                    <a chref="#" class="list-group-item list-group-item-action list-group-item-primary">
+                        Contatos
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-4 mt-md-0 mt-4">
+                    <h3 class="text-center">Social</h3>
+                    <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                        <a class="btn btn-outline-primary" href="#"> Facebook</a>
+                        <a class="btn btn-outline-info" href="#">Twitter</a>
+                        <a class="btn btn-outline-warning" href="#">Instagram</a>
+                    </div>            
+            </div>
+
+            
+        </div>
+    </div>
+        <div class="col-12 mt-5 bg-dark pb-2">
+                <hr>
+                <blockquote class="blockquote text-center text-light">
+                    <p class="mb-0"><em>Copyright</p>
+                    <footer class="blockquote-footer tittle ext-white">Copyright © 2019 WeWork Companies Inc. All rights reserved</footer>
+                </blockquote>
+        </div>
+    </div>
+    <!-- Script -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/busca.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>
